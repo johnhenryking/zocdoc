@@ -12,6 +12,8 @@
 		CE10148923D24A29002EDCD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE10148823D24A29002EDCD7 /* Assets.xcassets */; };
 		CE10148C23D24A29002EDCD7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE10148A23D24A29002EDCD7 /* LaunchScreen.storyboard */; };
 		CE10149423D24A6E002EDCD7 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE10149323D24A6E002EDCD7 /* MainTableViewController.swift */; };
+		CE10149723D24EA9002EDCD7 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE10149623D24EA9002EDCD7 /* Movie.swift */; };
+		CE10149A23D2503A002EDCD7 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE10149923D2503A002EDCD7 /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		CE10148B23D24A29002EDCD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE10148D23D24A29002EDCD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE10149323D24A6E002EDCD7 /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
+		CE10149623D24EA9002EDCD7 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		CE10149923D2503A002EDCD7 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +59,39 @@
 			isa = PBXGroup;
 			children = (
 				CE10147F23D24A28002EDCD7 /* AppDelegate.swift */,
-				CE10148523D24A28002EDCD7 /* Main.storyboard */,
-				CE10149323D24A6E002EDCD7 /* MainTableViewController.swift */,
+				CE10149823D24F8B002EDCD7 /* View Controllers */,
+				CE10149523D24E29002EDCD7 /* Model */,
+				CE10149B23D2503E002EDCD7 /* Network */,
 				CE10148823D24A29002EDCD7 /* Assets.xcassets */,
 				CE10148A23D24A29002EDCD7 /* LaunchScreen.storyboard */,
 				CE10148D23D24A29002EDCD7 /* Info.plist */,
 			);
 			path = zocdoc;
+			sourceTree = "<group>";
+		};
+		CE10149523D24E29002EDCD7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CE10149623D24EA9002EDCD7 /* Movie.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CE10149823D24F8B002EDCD7 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CE10148523D24A28002EDCD7 /* Main.storyboard */,
+				CE10149323D24A6E002EDCD7 /* MainTableViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		CE10149B23D2503E002EDCD7 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				CE10149923D2503A002EDCD7 /* NetworkManager.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +165,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE10149A23D2503A002EDCD7 /* NetworkManager.swift in Sources */,
 				CE10149423D24A6E002EDCD7 /* MainTableViewController.swift in Sources */,
 				CE10148023D24A28002EDCD7 /* AppDelegate.swift in Sources */,
+				CE10149723D24EA9002EDCD7 /* Movie.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
